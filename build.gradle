@@ -3,12 +3,9 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
-        maven { url "https://repo.grails.org/grails/core/" }
-        maven { url 'https://jitpack.io/' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
@@ -24,8 +21,5 @@ allprojects {
     repositories {
         google()
         jcenter()
-        mavenCentral()
-        maven { url "https://repo.grails.org/grails/core/" }
-        maven { url 'https://jitpack.io/' }
     }
 }

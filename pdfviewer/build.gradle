@@ -1,9 +1,6 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'apv'
-    bintrayName = 'com.github.arnaudelub.apv'
-
     publishedGroupId = 'com.github.arnaudelub.apv'
     libraryName = 'apv'
     artifact = 'apv'
@@ -48,9 +45,4 @@ dependencies {
 
 repositories {
     mavenCentral()
-}
-
-// apply from: 'bintray.gradle'
-if(project.rootProject.file('local.properties').exists()) {
-    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 }
