@@ -1,2 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.arnaudelub.pdfviewer" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- <activity
+    android:name=".PDFViewActivity_"
+    android:exported="true">
+    </activity> -->
+</manifest>
