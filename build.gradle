@@ -3,14 +3,33 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        maven { url "https://repo.grails.org/grails/core/" }
+        maven { url 'https://jitpack.io/' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
 plugins {
     id("java")
+    id("maven-publish")
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.github.danieletulone'
+            artifactId = 'apv'
+            version = '1.0'
+
+            from components.java
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
 }
 
 group 'com.github.arnaudelub'
@@ -21,5 +40,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url "https://repo.grails.org/grails/core/" }
+        maven { url 'https://jitpack.io/' }
     }
 }
+
+
