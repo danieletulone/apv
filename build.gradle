@@ -20,7 +20,7 @@ plugins {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = 'com.github.danieletulone'
+            groupId = 'com.github.arnaudelub'
             artifactId = 'apv'
             version = '1.0'
 
